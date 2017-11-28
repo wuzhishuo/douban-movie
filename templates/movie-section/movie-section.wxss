@@ -30,3 +30,9 @@
 .section-content .movie {
     margin-left: 20rpx;
 }
+
+.link-more {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

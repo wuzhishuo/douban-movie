@@ -12,4 +12,5 @@ text {
     height: 16rpx;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: 100% 0;
 }
