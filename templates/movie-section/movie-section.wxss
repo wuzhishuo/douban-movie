@@ -1,0 +1,32 @@
+@import "../movie/movie.wxss";
+.movie-section {
+    background: #fff;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 40rpx;
+    margin-bottom: 20rpx;
+    padding: 20rpx 20rpx 0 20rpx;
+}
+
+.section-title {
+    flex: 1;
+}
+
+.section-more {
+    flex-basis: 100rpx;
+    font-size: 24rpx;
+    color: #3370B2;
+    text-align: right;
+}
+
+.section-content {
+    display: flex;
+}
+
+.section-content .movie {
+    margin-left: 20rpx;
+}

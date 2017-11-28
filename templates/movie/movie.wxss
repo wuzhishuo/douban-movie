@@ -1,0 +1,15 @@
+@import "../rating/rating.wxss";
+.view-movie {
+    display: flex;
+    flex-direction: column;
+    width: 200rpx;
+}
+
+.view-movie .cover {
+    width: 200rpx;
+    height: 270rpx;
+}
+
+.view-movie .title {
+    margin: 10px 0;
+}

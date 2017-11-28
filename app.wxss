@@ -1,0 +1,15 @@
+text {
+    /* font-family: MicroSoft Yahei; */
+    font-size: 24rpx;
+    color: #666;
+}
+
+.icon-more {
+    display: inline-block;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAYAAADESFVDAAAAnUlEQVQokYXQwQ0CIRCF4R+2ECqwEjqQxBhPZm96sgxPG+LBwyaUQDsmlGABRi+DAZfFuZH5ZiYPZWy4ABtgl6J70SgNGGALzMaGYQ2NgBd4MzaoBUrRvQt4AKZf+H1IYwKOMjDKAqqJNbi4L/AO7DNcIIEDMEsYr1uoSA7wbJ0rt1xTdCfdAR44V+kaoP6CHgBQ/0BO0AUZPXoA4AOPZUbEE5XBMQAAAABJRU5ErkJggg==");
+    vertical-align: middle;
+    width: 15rpx;
+    height: 16rpx;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

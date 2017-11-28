@@ -1,0 +1,23 @@
+<import src="../movie/movie.wxml" />
+
+<template name="movie-section">
+  <view class="movie-section">
+    <view class="section-header">
+      <text class="section-title">{{title}}</text>
+      <view class="section-more">
+        <navigator url="/pages/index/index" navigateBack>
+        更多 
+        <view class="icon-more"></view></navigator>
+      </view>
+    </view>
+    <scroll-view scroll-x="{{true}}">
+    <view class="section-content">
+      <block wx:for="{{movies}}" wx:for-item="movie" wx:key="{{movies.id}}">
+      <view class="movie">
+        <template is="movie" data="{{...movie}}"></template>
+      </view>
+      </block>
+    </view>
+    </scroll-view>
+  </view>
+</template>

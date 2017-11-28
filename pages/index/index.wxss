@@ -1,0 +1,9 @@
+@import '../../templates/movie-section/movie-section.wxss';
+
+.container {
+  background: #e4e4e4;
+}
+
+.movie-group {
+  margin-bottom: 20rpx;
+}

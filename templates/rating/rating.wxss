@@ -1,0 +1,17 @@
+.rating-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stars {
+    display: flex;
+    height: 17rpx;
+    margin-right: 10rpx;
+}
+
+.rating-container .stars image {
+    width: 17rpx;
+    height: 17rpx;
+    margin-right: 4rpx;
+}
