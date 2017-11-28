@@ -32,7 +32,14 @@ function createAPI(baseURL) {
         }
       },
       fail: function (res) {
-
+        if (typeof opts.fail === 'function') {
+          opts.fail(res);
+        }
+      },
+      complete: function (res) {
+        if (typeof opts.complete === 'function') {
+          opts.complete();
+        }
       }
     })
   };

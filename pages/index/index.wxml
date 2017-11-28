@@ -1,12 +1,12 @@
  <import src='../../templates/movie-section/movie-section.wxml' /> 
 <view class='container'>
   <view class="movie-group">
-    <template is="movie-section" data="{{title: '正在上映',movies:inTheaters}}"/>
+    <template is="movie-section" data="{{title: '正在上映',type:'in_theaters',movies:inTheaters}}"/>
   </view>
   <view class="movie-group">
-    <template is="movie-section" data="{{title: '即将上映',movies:comingSoon}}"/>
+    <template is="movie-section" data="{{title: '即将上映',type:'coming_soon',movies:comingSoon}}"/>
   </view>
   <view class="movie-group">
-    <template is="movie-section" data="{{title: '豆瓣Top250',movies:top250}}"/>
+    <template is="movie-section" data="{{title: '豆瓣Top250',type:'top250',movies:top250}}"/>
   </view>
 </view>

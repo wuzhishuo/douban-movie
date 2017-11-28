@@ -5,7 +5,7 @@
     <view class="section-header">
       <text class="section-title">{{title}}</text>
       <view class="section-more">
-        <navigator class="link-more" url="/pages/index/index" navigateBack>
+        <navigator class="link-more" url="/pages/list/list?type={{type}}" navigateBack>
         更多 
         <view class="icon-more"></view></navigator>
       </view>

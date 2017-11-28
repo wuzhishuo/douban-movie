@@ -1,0 +1,20 @@
+@import "../../templates/movie/movie.wxss";
+.list-movie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20rpx;
+}
+
+.list-movie .list-item {
+    display: flex;
+    margin-bottom: 40rpx;
+}
+
+.tips {
+    display: flex;
+    height: 40rpx;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

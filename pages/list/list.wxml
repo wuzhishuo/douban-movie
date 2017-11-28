@@ -1,0 +1,10 @@
+<import is="movie" src="../../templates/movie/movie.wxml" />
+
+<view class="list-movie">
+  <block wx:for="{{movies}}" wx:for-item="movie" wx:key="{{movie.id}}">
+  <view class="list-item">
+    <template is="movie" data="{{...movie}}"/>
+  </view>
+  </block>
+  <text class="tips no-more" wx:if="{{start>total}}">没有更多电影了</text>
+</view>

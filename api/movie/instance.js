@@ -1,4 +1,6 @@
-import { createAPI } from '../util';
+import {
+  createAPI
+} from '../util';
 import config from '../config';
 
 const baseUrl = {
@@ -8,4 +10,4 @@ const baseUrl = {
   prod: ''
 }[config.env || 'mock'];
 
-module.exports= createAPI(baseUrl)
+module.exports = createAPI(baseUrl)
