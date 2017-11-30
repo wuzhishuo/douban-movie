@@ -1,0 +1,70 @@
+<import src="../../templates/rating/rating.wxml" />
+<import is="cast" src="../../templates/cast/cast.wxml" />
+
+<view class="container">
+  <view class="section section-header">
+    <view class="background-cover">
+      <image src="{{images.medium}}" class="header-background" mode="aspectFill"/>
+    </view>
+    <image src="{{images.small}}" class="header-poster"/>
+    <text class="movie-title">{{title}}</text>
+    <text class="year">{{countries}} • {{year}}</text>
+    <view class="info-group">
+      <view class="group-item">
+        <text class="text-highlight">{{wish_count}}</text><text> 人喜欢</text>
+      </view>
+      <view class="group-item">
+      <text class="text-highlight">{{comments_count}}</text><text> 条评论</text>
+      </view>
+    </view>
+  </view>
+  <view class="section border">
+    <text class="section-title movie-name">{{original_title}}</text>
+    <view class="info-line">
+      <text class="info-name">评分</text>
+      <view class="info-content">
+        <template is='rating' data='{{stars:stars,score:rating.average}}'></template>
+      </view>
+    </view>
+    <view class="info-line">
+      <text class="info-name">导演</text>
+      <text class="info-content">
+        <block wx:for="{{directors}}" wx:for-item="director" wx:key="{{director.name}}">
+          <text>{{director.name}}</text>
+          <text wx:if="{{index<directors.length-1}}"> / </text>
+        </block>
+      </text>
+    </view>
+     <view class="info-line">
+      <text class="info-name">主演</text>
+      <text class="info-content">
+        <block wx:for="{{casts}}" wx:for-item="cast" wx:key="{{cast.name}}">
+          <text>{{cast.name}}</text>
+          <text wx:if="{{index<casts.length-1}}"> / </text>
+        </block>
+      </text>
+    </view>
+     <view class="info-line">
+      <text class="info-name">类型</text>
+      <text class="info-content">{{genres}}</text>
+    </view>
+  </view>
+  <view class="section border">
+    <text class="section-title">剧情简介</text>
+    <view>
+      <text>{{summary}}</text>
+    </view>
+  </view>
+  <view class="section">
+    <text class="section-title">主演</text>
+    <scroll-view scroll-x="{{true}}">
+      <view class="cast-container">
+        <block wx:for="{{casts}}" wx:for-item="cast">
+            <view class="cast-item">
+              <template is="cast" data="{{name: cast.name,avatar: cast.avatars.small}}"/>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>

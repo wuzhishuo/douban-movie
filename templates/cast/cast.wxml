@@ -1,0 +1,6 @@
+<template name="cast">
+  <view class="cast">
+    <image src="{{avatar}}" class="avatar" mode="scaleToFill"/>
+    <text class="name">{{name}}</text>
+  </view>
+</template>

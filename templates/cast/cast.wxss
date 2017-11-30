@@ -1,0 +1,14 @@
+.cast {
+    display: flex;
+    flex-direction: column;
+}
+
+.cast .avatar {
+    width: 180rpx;
+    height: 230rpx;
+    margin-bottom: 20rpx;
+}
+
+.cast .name {
+    font-size: 26rpx;
+}

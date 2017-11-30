@@ -2,7 +2,7 @@ function formatDouBanMovies(movies) {
   return movies.map((item, index) => {
     return {
       average: item.rating.average,
-      stars: _getStars(item.rating.stars),
+      stars: getStars(item.rating.stars),
       cover: item.images.small,
       title: item.title,
       id: item.id
@@ -10,7 +10,7 @@ function formatDouBanMovies(movies) {
   })
 }
 
-function _getStars(starsNum) {
+function getStars(starsNum) {
   let star = Math.round(starsNum / 10);
   let stars = [];
 
@@ -27,5 +27,6 @@ function _getStars(starsNum) {
 }
 
 module.exports = {
-  formatDouBanMovies
+  formatDouBanMovies,
+  getStars
 }

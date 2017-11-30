@@ -45,14 +45,14 @@ function createAPI(baseURL) {
   };
 }
 
-function convertRESTAPI(url, opts) {
-  if (!opts || !opts.path) return url;
+function convertRESTAPI(url, params) {
+  if (!params) return url;
 
-  const pathKeys = Object.keys(opts.path);
+  const pathKeys = Object.keys(params);
 
   pathKeys.forEach((key) => {
     const r = new RegExp('(:' + key + '|{' + key + '})', 'g');
-    url = url.replace(r, opts.path[key]);
+    url = url.replace(r, params[key]);
   });
 
   return url;

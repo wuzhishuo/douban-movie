@@ -1,0 +1,101 @@
+@import "../../templates/rating/rating.wxss";
+@import "../../templates/cast/cast.wxss";
+.section {
+    padding: 40rpx 30rpx 30rpx 30rpx;
+}
+
+.section-header {
+    height: 200rpx;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.background-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.header-poster {
+    position: absolute;
+    right: 30rpx;
+    bottom: -40rpx;
+    width: 140rpx;
+    height: 180rpx;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(40px);
+    z-index: -1;
+}
+
+.section-header .movie-title {
+    color: #fff;
+    font-size: 36rpx;
+    display: block;
+    margin-bottom: 30rpx;
+}
+
+.section-header .year {
+    color: #fff;
+}
+
+.section-header .info-group {
+    margin-top: 30rpx;
+}
+
+.group-item {
+    margin-right: 30rpx;
+    display: inline-block;
+}
+
+.group-item .text-highlight {
+    color: #D74C41;
+}
+
+.section.border {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.section-title {
+    display: block;
+    margin-bottom: 20rpx;
+    font-size: 26rpx;
+    color: #999;
+}
+
+.section-title.movie-name {
+    color: #333;
+}
+
+.info-line {
+    display: flex;
+    margin-bottom: 20rpx;
+}
+
+.info-line .info-name {
+    color: #999;
+    margin-right: 30rpx;
+}
+
+.info-line .info-content {
+    flex: 1;
+}
+
+.cast-item {
+    width: 180rpx;
+    margin-right: 25rpx;
+}
+
+.cast-container {
+    display: flex;
+}

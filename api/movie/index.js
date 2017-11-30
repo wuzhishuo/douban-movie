@@ -4,6 +4,13 @@ var util = require('../util');
 var convertRESTAPI = util.convertRESTAPI;
 
 
+  function getDetail(opts) {
+    opts.method = 'GET';
+    opts.url=convertRESTAPI('/subject/:id', opts.data) ;
+    return instance(opts);
+}
+
+
   function fetchTop250(opts) {
     opts.method = 'GET';
      opts.url='/top250' ;
@@ -25,6 +32,7 @@ var convertRESTAPI = util.convertRESTAPI;
 }
 
  module.exports= {
+  getDetail ,
   fetchTop250 ,
   fetchComingSoon ,
   fetchInTheaters 
